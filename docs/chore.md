@@ -1,5 +1,23 @@
 # 项目构建
 
+## 全局样式管理
+
+1、安装
+```
+npm i sass -D
+```
+
+2、配置 styles 目录结构
+
+* index 全局样式
+* mixin 样式混入
+* sidebar 侧边栏
+* transition 动画
+* variables 变量
+... 其他, 比如 element-ui 覆盖
+
+3、在 main.js 引入全局样式 index
+
 ## 路由和状态管理 Vue-router Vuex
 
 1、安装vue-router 和 vuex

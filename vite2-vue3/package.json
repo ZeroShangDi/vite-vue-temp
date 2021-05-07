@@ -16,6 +16,7 @@
     "@vitejs/plugin-vue": "^1.2.2",
     "@vue/compiler-sfc": "^3.0.5",
     "cross-env": "^7.0.3",
+    "sass": "^1.32.12",
     "vite": "^2.2.3",
     "vite-plugin-mock": "^2.5.0"
   }
