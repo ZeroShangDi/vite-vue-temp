@@ -1,0 +1,17 @@
+// 变量
+
+// 左侧导航宽度
+$sideBarWidth: 200px;
+
+// 顶部导航高度
+$navBarHeight: 60px;
+
+// tags 高度
+$tagsViewHeight: 40px;
+
+// 导出并在js中使用 import varibles from 'styles/variables.module.scss'
+:export {
+    sideBarWidth: $sideBarWidth;
+    navBarHeight: $navBarHeight;
+    tagsViewHeight: $tagsViewHeight;
+}

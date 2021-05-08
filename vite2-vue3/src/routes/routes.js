@@ -1,6 +1,9 @@
 export default [
     {
         path: '/',
-        component: () => import('views/home.vue')
+        component: () => import('comp/HelloWorld.vue'),
+        children: [
+            
+        ]
     }
 ]
