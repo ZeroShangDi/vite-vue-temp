@@ -52,6 +52,12 @@ createApp(App).use(router).mount('#app')
 
 ```
 
+## 数据请求封装 Axios
+
+// src/utils/axios/ 详见 Git 日志
+
+主要包含请求全局配置、请求拦截、重复请求取消、取消请求函数、登录校验、权限校验、状态码、网络状态码、加载动画、错误提示
+
 ## 数据 Mock
 
 1、安装需要的包

@@ -19,6 +19,11 @@
 <script setup>
 import { defineProps, reactive } from 'vue'
 
+import { getUser } from 'apis/user'
+
+const user = await getUser()
+console.log(user)
+
 defineProps({
   msg: String
 })

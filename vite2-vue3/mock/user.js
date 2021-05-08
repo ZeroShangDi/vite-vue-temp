@@ -1,6 +1,6 @@
 export default {
     url: '/api/createUser',
-    method: 'get',
+    method: 'post',
     response: ({ body }) => {
         console.log(body)
         return {
