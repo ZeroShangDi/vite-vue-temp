@@ -1,13 +1,7 @@
 <template>
-    <div>
-        顶部导航栏
-    </div>
+  <div>顶部导航栏</div>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

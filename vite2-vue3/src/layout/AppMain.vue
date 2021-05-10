@@ -1,19 +1,17 @@
 <template>
-    <section class="app-main">
-        <router-view v-slot="{ Component }">
-            <transition name="fade-transform" mode="out-in">
-                <component :is="Component" />
-            </transition>
-        </router-view>
-    </section>
+  <section class="app-main">
+    <router-view v-slot="{ Component }">
+      <transition name="fade-transform" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
+  </section>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style lang="scss" scoped>
 .app-main {
-    width: 100%;
+  width: 100%;
 }
 </style>

@@ -9,16 +9,15 @@ import configure from './configure'
 
 // 创建Axios实例
 export function createHttp({ axiosOptions, request }) {
+  const http = axios.create(axiosOptions)
 
-    const http = axios.create(axiosOptions)
+  const server = request ? request(http) : http
 
-    const server = request ? request(http) : http
+  http.interceptors.request.use(requestIntercept, requestInterceptError)
 
-    http.interceptors.request.use(requestIntercept, requestInterceptError)
+  http.interceptors.response.use(responseIntercept, responseInterceptError)
 
-    http.interceptors.response.use(responseIntercept, responseInterceptError)
-
-    return server
+  return server
 }
 
 // 导出取消构造函数

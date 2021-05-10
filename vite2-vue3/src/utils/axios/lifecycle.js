@@ -20,7 +20,7 @@
  *            :reject  请求到错误数据回调
  *                提示后端错误信息
  *        :fail 请求失败回调(404、500)
-*/
+ */
 import {
   // setCookies,
   // getCookies,
@@ -28,21 +28,18 @@ import {
   tipsMessage,
   errorLoading,
   closeLoading,
-
   handleSign,
   handleCode,
   handlePower,
   handleStatus,
-
   isRepeatRequest,
   isFinishRequest,
-  
 } from './utils'
 
 // 请求拦截
 export const requestIntercept = (config) => {
   // 重复请求直接取消
-  const isRepeat = isRepeatRequest(config)
+  isRepeatRequest(config)
 
   // 登陆校验
   handleSign(config)

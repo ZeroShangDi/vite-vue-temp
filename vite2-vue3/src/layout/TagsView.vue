@@ -1,13 +1,7 @@
 <template>
-    <div>
-        选项卡
-    </div>
+  <div>选项卡</div>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

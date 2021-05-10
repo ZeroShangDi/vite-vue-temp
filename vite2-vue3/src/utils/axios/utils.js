@@ -18,10 +18,14 @@ export function closeLoading() {}
 export function tipsMessage() {}
 
 // 登陆校验
-export function handleSign(config) {}
+export function handleSign(config) {
+  console.log(config)
+}
 
 // 处理权限
-export function handlePower(config) {}
+export function handlePower(config) {
+  console.log(config)
+}
 
 // 自定义状态
 export function handleCode(response) {
@@ -29,10 +33,12 @@ export function handleCode(response) {
 }
 
 // 网络状态
-export function handleStatus(error) {}
+export function handleStatus(error) {
+  console.log(error)
+}
 
-let requestList = []
-let sourcesList = []
+const requestList = []
+const sourcesList = []
 
 // 取消请求
 export function cancelRequest(key) {
