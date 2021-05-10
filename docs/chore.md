@@ -1,5 +1,34 @@
 # 项目构建
 
+## 代码规范
+
+0、vscode 中安装 eslint prettier vetur 插件
+
+1、安装 eslint 以及相关依赖到开发环境 -D
+
+```
+eslint
+eslint-plugin-prettier
+eslint-plugin-vue
+prettier
+babel-eslint
+@vue/eslint-config-prettier
+```
+
+2、配置 .prettierrc 文件 (?)
+
+3、配置 .eslintrc.js 文件 (代码规范定制) .eslintignore 文件 (忽略部分文件的格式检测)
+
+4、配置 .vscode/settings.json 文件 (配置当前目录的 vscode 配置、保存时校验格式并自动修复)
+
+or
+
+```
+vue add @vue/eslint
+```
+
+// TODO 这里有个坑, eslintrc.js 中, 'plugin:vue/vue3-essential' 插件不存在, 即便升级插件 eslint-plugin0vue 到 @7.0.0 的版本, 依旧不能支持 script steup
+
 ## 全局样式管理
 
 1、安装

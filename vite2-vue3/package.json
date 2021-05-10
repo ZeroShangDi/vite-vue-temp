@@ -2,9 +2,10 @@
   "name": "vite2-vue3",
   "version": "0.0.0",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development vite",
+    "serve": "vite preview",
     "build": "vite build",
-    "serve": "vite preview"
+    "lint": "vue-cli-service lint",
+    "dev": "cross-env NODE_ENV=development vite && npm run lint"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -15,10 +16,23 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.2",
+    "@vue/cli-plugin-eslint": "^4.5.13",
+    "@vue/cli-service": "^3.12.1",
     "@vue/compiler-sfc": "^3.0.5",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-standard": "^5.1.2",
     "cross-env": "^7.0.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^7.0.0",
+    "prettier": "^2.2.1",
     "sass": "^1.32.12",
     "vite": "^2.2.3",
-    "vite-plugin-mock": "^2.5.0"
+    "vite-plugin-mock": "^2.5.0",
+    "vue-template-compiler": "^2.6.12"
   }
 }
