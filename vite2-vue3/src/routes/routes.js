@@ -1,7 +1,12 @@
 export default [
   {
     path: '/',
-    component: () => import('comp/HelloWorld.vue'),
+    component: () => import('views/features/index.vue'),
+    children: [],
+  },
+  {
+    path: '/features',
+    component: () => import('views/features/index.vue'),
     children: [],
   },
 ]
