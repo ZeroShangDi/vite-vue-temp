@@ -14,8 +14,10 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    "prettier/prettier": [
-      "warn",
+    'vue/experimental-script-setup-vars': 'none',
+    'vue/experimental-script-setup-vars': '',
+    'prettier/prettier': [
+      'warn',
       {
         singleQuote: true, // 单引号 or 双引
         semi: false, // 是否加分号
